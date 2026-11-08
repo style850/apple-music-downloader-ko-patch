@@ -1,0 +1,54 @@
+# Apple Music Downloader Native: project license
+
+Copyright 2026 Andrew05213.
+
+Original project-authored code and modifications that the maintainer has the
+right to license are licensed under the Apache License, Version 2.0. See LICENSE.
+This does not relicense imported code, historical archives, dependencies or
+runtime material. Their existing copyright and license notices remain in force.
+Material whose provenance or authorization is unresolved is not granted a
+redistribution license by the project's Apache-2.0 declaration.
+
+# Third-party notices and provenance: Native
+
+The maintainer enabled the native public build gate. This notice is not a
+complete license clearance or a source offer; unresolved obligations remain.
+See docs/compliance/native-status.md in the source repository for the open
+corresponding-source, dependency and authorization review.
+
+The native runtime uses the Andrew05213/wrapper work branch at
+15fe0cb75b866e7460bf8d28d155e813a870e076, derived from
+WorldObservationLog/wrapper. The upstream MIT copyright and license are retained in
+the installer at resources/native-runtime/notices/wrapper-LICENSE. Local patches
+and input identities are recorded in native-runtime/inputs.lock.json and the
+runtime build evidence.
+
+QEMU 11.1.0, the Debian Linux kernel and BusyBox are included as runtime
+components. QEMU license texts are in the installer's resources/native-runtime/
+notices. A partial Debian Linux and BusyBox source package is provided with
+the 1.0.0 release; it does not contain QEMU corresponding source. The exact
+corresponding source, build inputs and associated notices still require review;
+this notice does not itself satisfy source-distribution obligations.
+
+cJSON (copyright 2009-2017 Dave Gamble and contributors, MIT) and Dobby
+(Apache-2.0) are linked into Lite. Their license texts are included under
+resources/third-party-licenses in the installer. Their top-level license texts
+match the pinned upstream versions; other applicable notices remain under review.
+
+Some newer builds may include candidate Go license texts for their actual
+Go binaries in resources/go-licenses. Previously published installers do not
+automatically acquire these files. Go dependency attribution, QEMU DLLs,
+firmware and Android components remain under review.
+
+The Windows application includes Electron. Its license and Chromium notices
+are provided alongside the executable as LICENSE.electron.txt and
+LICENSES.chromium.html.
+
+The imported downloader attributes the original script to Sorrow. The MIT
+license for utils/runv2 is in apple-music-downloader/utils/runv2/LICENSE and is included
+in the installer at resources/third-party-licenses/runv2-LICENSE.
+Android/Apple runtime material and CDM-related material require separate
+authorization review. No rights in third-party material are granted here.
+
+The historical WSL Appliance notice is retained at docs/legacy/NOTICE-v1 and
+is not a description of the current Native installer.

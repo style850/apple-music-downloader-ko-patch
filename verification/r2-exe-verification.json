@@ -1,0 +1,11 @@
+{
+  "oldBugReproduced": true,
+  "passed": true,
+  "repeatApply": true,
+  "freshApply": true,
+  "restore": true,
+  "cacheReadable": true,
+  "patchSHA256": "afc7e5c40800d205bbdd0c44470763613bf743c4643f2773f5491634eceb5b77",
+  "sessionBytesPreserved": true,
+  "upgrade": true
+}

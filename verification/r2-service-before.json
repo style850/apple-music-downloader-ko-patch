@@ -1,0 +1,23 @@
+{
+  "label": "before",
+  "transitions": [
+    {
+      "runtime": "starting",
+      "code": "",
+      "session": "checking"
+    },
+    {
+      "runtime": "failed",
+      "code": "native_bundle_identity_mismatch",
+      "session": "unverified"
+    }
+  ],
+  "result": {
+    "runtime": "failed",
+    "code": "native_bundle_identity_mismatch",
+    "session": "unverified"
+  },
+  "closed": true,
+  "loginSubmitted": false,
+  "downloadSubmitted": false
+}

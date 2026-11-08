@@ -1,0 +1,21 @@
+<!doctype html>
+<!-- Modified 2026-11-08 for Korean UI; see docs/PATCH-ATTRIBUTION.ko.md. -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'">
+  <title>Apple Music Downloader</title>
+  <link rel="stylesheet" href="native-startup.css">
+</head>
+<body data-phase="loading">
+  <main aria-label="Apple Music Downloader 시작 중">
+    <img id="startup-logo" src="../assets/app-icon.png" width="48" height="48" alt="">
+    <section id="startup-error" role="status" hidden>
+      <p id="startup-message">시작이 아직 완료되지 않았습니다. 앱에서 상태를 확인할 수 있습니다.</p>
+      <div><button id="startup-enter" type="button">앱 열기</button><button id="startup-quit" type="button">종료</button></div>
+    </section>
+  </main>
+  <script src="native-startup.js"></script>
+</body>
+</html>

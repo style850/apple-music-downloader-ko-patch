@@ -1,0 +1,23 @@
+{
+  "label": "after",
+  "transitions": [
+    {
+      "runtime": "starting",
+      "code": "",
+      "session": "checking"
+    },
+    {
+      "runtime": "ready",
+      "code": "",
+      "session": "checking"
+    }
+  ],
+  "result": {
+    "runtime": "ready",
+    "code": "",
+    "session": "checking"
+  },
+  "closed": true,
+  "loginSubmitted": false,
+  "downloadSubmitted": false
+}
