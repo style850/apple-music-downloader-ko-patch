@@ -1,70 +1,95 @@
-# Apple Music Downloader 한국어·보안 패치 r2
+# Apple Music Downloader 한국어 호환 패치 3.0.1
 
-Windows용 **Apple Music Downloader Native 1.0.3-beta.4**에 한국어 UI와 세션 파일 접근 권한 수정을 적용하는 비공식 패치입니다. 원본 앱을 먼저 설치한 다음 패치를 실행합니다.
+Windows용 **Apple Music Downloader Native**의 화면 문구를 한국어로 표시하는 비공식 호환 패치입니다. 원본 앱을 먼저 설치한 뒤, 같은 패처 EXE를 수동으로 실행합니다.
 
-**지원 환경: Windows x64 · 원본 1.0.3-beta.4 또는 첫 번째 한국어·보안 패치 설치본.** 다른 버전과 다른 방식으로 수정한 파일은 지원하지 않습니다. 원본이 베타 버전이므로 이 릴리스도 사전 릴리스로 제공합니다.
+3.0.1은 설치된 앱의 UI 구조와 무결성 정보를 검사한 뒤, 지원되는 구조일 때만 기존 화면 스크립트 세 곳에 한국어 표시층을 덧붙입니다. 원본 업데이트 뒤에도 같은 구조이면 다시 적용할 수 있지만, **모든 미래 버전을 자동으로 지원한다는 뜻은 아닙니다.** 구조가 바뀌거나 검사에 실패하면 원본을 건드리지 않고 중단합니다.
+
+3.0.1에서는 홈·새로운 발견·내 플레이리스트 제목, 재생·전체 다운로드 버튼, 다운로드 결과 집계·곡별 상태·실패 안내·재시도·삭제·폴더 열기 안내의 번역 누락을 수정했습니다. 곡명과 가수명은 원문을 보존합니다. 기존 3.0.0이 적용되어 있어도 원본 복구를 먼저 할 필요 없이 업데이트할 수 있습니다.
 
 ## 다운로드
 
 | 필요한 파일 | 링크 |
 | --- | --- |
 | 원본 프로젝트 — 원 제작자 제공 | [Apple Music Downloader Native 원본 페이지](https://github.com/Andrew05213/applemusic-downloader-native) |
-| 두 번째 패치 EXE | [AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2.exe](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2.exe) |
-| 패치 EXE·소스·라이선스 묶음 | [AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Package.zip](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Package.zip) |
-| 변경 소스·문서만 받기 | [AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Source.zip](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Source.zip) |
-| 파일 SHA-256 | [SHA256SUMS.txt](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/SHA256SUMS.txt) |
+| 한국어 호환 패치 3.0.1 | [AppleMusicDownloader-Korean-Patch.exe 다운로드](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v3.0.1/AppleMusicDownloader-Korean-Patch.exe) |
+| 파일 SHA-256 | [SHA256SUMS.txt](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v3.0.1/SHA256SUMS.txt) |
+| 3.0.1 소스 | [릴리스 페이지의 Source code](https://github.com/style850/apple-music-downloader-ko-patch/releases/tag/v3.0.1) |
+| 이전 r2 공개 릴리스 | [1.0.3-beta.4-ko-r2 릴리스](https://github.com/style850/apple-music-downloader-ko-patch/releases/tag/v1.0.3-beta.4-ko-r2) — 아래의 역사적 릴리스 안내를 확인하세요. |
 
-[이 패치의 릴리스 페이지](https://github.com/style850/apple-music-downloader-ko-patch/releases/tag/v1.0.3-beta.4-ko-r2) · [원본 소스](https://github.com/Andrew05213/applemusic-downloader-native) · [공개 변경 소스](patch-source)
+원본 앱의 설치 안내와 릴리스 정보는 원본 프로젝트 페이지에서 확인하세요. 이 저장소와 패치 파일에는 원본 앱 전체, Apple·Android·QEMU 런타임, 사용자 프로필 및 계정 자료를 포함하지 않습니다. 원본 프로젝트가 밝힌 제3자 권리 검토의 미완료 사항은 [원본 고지](https://github.com/Andrew05213/applemusic-downloader-native/blob/6adb6703d4f8ef04e08dc0e3e47b57d44c4f1786/NOTICE)에서 확인할 수 있습니다.
 
-원본 앱의 설치 안내와 릴리스 정보는 위 원본 프로젝트 페이지에서 확인하세요. 버전별 설치 파일 대신 프로젝트 페이지로 연결합니다. 이 저장소와 패치 ZIP에는 원본 앱 전체, Apple·Android·QEMU 런타임, 사용자 프로필 및 계정 자료를 포함하지 않습니다. 원본 프로젝트가 밝힌 제3자 권리 검토의 미완료 사항은 [원본 고지](https://github.com/Andrew05213/applemusic-downloader-native/blob/6adb6703d4f8ef04e08dc0e3e47b57d44c4f1786/NOTICE)에서 확인할 수 있습니다.
+## 사용 방법
 
-## 설치 방법
+1. 원본 Apple Music Downloader Native를 설치합니다.
+2. 앱을 완전히 종료합니다. 진행 중인 다운로드가 있다면 먼저 끝내세요.
+3. `AppleMusicDownloader-Korean-Patch.exe`를 실행합니다. 기본 설치 폴더를 찾지 못하면 원본 앱 EXE를 선택합니다.
+4. 표시된 설치 버전과 폴더를 확인한 뒤 적용합니다. 완료 후 기존 바로가기로 원본 앱을 실행합니다.
 
-1. [원본 프로젝트 페이지](https://github.com/Andrew05213/applemusic-downloader-native)에서 설치 안내를 확인합니다. 이 패치를 적용하려면 **원본 1.0.3-beta.4**가 필요하며, 최신 원본 버전은 지원 대상이 아닙니다. 이미 해당 원본이나 첫 패치가 설치되어 있다면 재설치는 필요하지 않습니다.
-2. Apple Music Downloader를 완전히 종료합니다. 진행 중인 다운로드가 있다면 먼저 끝내세요.
-3. `AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2.exe`를 실행합니다.
-4. 설치 폴더와 적용 안내를 확인하고 **예**를 누릅니다. 기본 경로를 찾지 못하면 실제 설치 폴더를 선택합니다.
-5. 완료 후 기존 바로가기로 앱을 실행합니다. **설정 및 상태**에서 서비스 상태를 확인합니다.
+명령줄에서도 사용할 수 있습니다.
 
-패처는 지원 파일의 SHA-256을 검증하고 원본 파일을 백업합니다. 첫 패치에서 r2로 올릴 때는 기존 원본 백업도 검증합니다. 알 수 없는 버전·변조된 파일·백업 이상은 적용을 중단합니다.
+```powershell
+.\AppleMusicDownloader-Korean-Patch.exe --check
+.\AppleMusicDownloader-Korean-Patch.exe --apply
+.\AppleMusicDownloader-Korean-Patch.exe --restore
+.\AppleMusicDownloader-Korean-Patch.exe --check --install-dir 'C:\Users\사용자\AppData\Local\Programs\Apple Music Downloader Native'
+```
 
-설치·프로필·다운로드 경로와 계정 파일 내용은 유지합니다. 그래도 중요한 데이터는 적용 전에 백업하세요. 패처에 Apple ID나 비밀번호를 입력할 필요는 없습니다.
+`--check`는 현재 상태만 JSON으로 보여 주고 파일을 바꾸지 않습니다. `--apply`는 검사 통과 시에만 적용하며, 이미 같은 패치가 적용된 상태에서는 변경하지 않습니다. 검증된 3.0.0 적용본은 `upgradable`로 표시하며, 원본 백업을 보존한 채 3.0.1로 업데이트합니다. `--restore`는 기록된 원본·적용본 해시와 일치하는 파일만 원본으로 되돌립니다.
 
-### 첫 패치 후 “로컬 서비스를 사용할 수 없습니다”가 나오는 경우
+Apple ID, 비밀번호, 인증 코드 입력은 요구하지 않습니다. 설치·프로필·다운로드 경로·계정 파일의 내용은 바꾸지 않습니다. 그래도 중요한 데이터는 적용 전에 백업하세요.
 
-첫 패치가 runtime 폴더의 권한 상속을 잘못 처리해 내부 실행 파일을 읽을 수 없게 만드는 문제가 있었습니다. 이 데이터 폴더는 재설치 후에도 남을 수 있습니다. **앱을 종료한 뒤 r2를 적용**하면 해당 권한을 복구합니다. 기존 로그인 파일을 삭제할 필요는 없습니다.
+### 원본 앱을 업데이트한 뒤
 
-### 원본 복구와 재설치
+원본 앱 업데이트가 끝난 뒤 앱을 종료하고 **같은 패처 EXE를 다시 실행**하세요. 자동 실행, 업데이트 훅 설치, 백그라운드 변경은 하지 않습니다.
 
-- **이미 r2가 적용된 상태에서 같은 EXE를 다시 실행하면 원본 복구를 제안합니다.** 반복 업데이트 버튼이 아닙니다.
-- 복구는 백업한 원본 프로그램 파일을 되돌립니다. 로그인·다운로드 데이터와 강화된 세션 파일 권한은 유지합니다.
-- 원본 앱을 제거·재설치했다면 앱을 종료한 상태에서 r2를 다시 적용합니다. 사용자 데이터까지 삭제하면 저장된 로그인이 사라질 수 있습니다.
-- 원본 백업은 설치 폴더의 `.amdl-ko-security-backup-v1`에 보관됩니다. 복구가 필요할 수 있으므로 임의로 삭제하지 마세요.
+업데이트된 원본은 예전 패치의 복구 대상으로 취급하지 않습니다. 그래서 앱 업데이트 뒤 `--restore`가 예전 버전을 덮어써서 다운그레이드하는 일을 막습니다. 새 원본이 구조 검사에 통과하면 새 버전을 기준으로 한국어 표시층을 다시 적용하고, 통과하지 않으면 새 원본을 그대로 둔 채 이유를 알려 줍니다.
 
-## 변경 사항
+### 백업과 복구
 
-- 메뉴·로그인 안내·상태·오류·접근성 문구를 한국어로 변경했습니다.
-- 세션 이미지와 비밀 값 파일의 Windows 접근 권한을 현재 사용자·SYSTEM·관리자로 제한했습니다.
-- r2는 runtime 하위 실행 파일에 필요한 권한 상속을 복구합니다. 민감 상태 파일은 별도 보호 권한을 유지합니다.
-- 원본 해시 검증, 백업·복구, 교체 실패 시 롤백을 포함합니다. Electron ASAR 무결성 검사는 유지합니다.
+첫 적용 전 프로그램 파일 세 개를 설치 폴더의 다음 위치에 보관합니다.
+
+```text
+<설치 폴더>\.amdl-ko-overlay-v3\<원본 app.asar SHA-256>\
+```
+
+보관 대상은 `resources\app.asar`, `resources\native-package.json`, `Apple Music Downloader Native.exe`입니다. `state.json`에는 패처·원본 버전과 원본·적용본의 SHA-256을 기록합니다. 패치 업데이트 중에는 이전 적용본 해시도 임시로 기록해 중단 후 복구에 사용합니다. 프로필·다운로드·서비스·네이티브 런타임 파일은 백업하거나 바꾸지 않습니다.
+
+적용 중 전원 차단·강제 종료 등이 있었다면 자동으로 덮어쓰지 않습니다. 앱을 종료한 상태에서 `--restore`로 일치하는 원본을 복구한 뒤 다시 적용하세요. 백업 폴더는 복구가 필요할 수 있으므로 임의로 삭제하지 마세요.
+
+## 무엇이 바뀌나
+
+- 메뉴, 로그인 안내, 설정, 다운로드 진행·상태·오류, 접근성 문구를 한국어로 표시합니다.
+- 원본의 세 화면 스크립트(`native-renderer.js`, `native-login.js`, `native-startup.js`)에만 UI 표시층을 추가합니다.
+- 트랙·앨범·아티스트·재생목록 이름, 검색어와 입력값 같은 사용자/카탈로그 데이터는 번역하지 않습니다. 새 원본에서 아직 알지 못하는 문구도 원문으로 남깁니다.
+- 원본 앱의 main/preload/service 코드, 네이티브 런타임, 사용자 프로필은 변경하지 않습니다. ASAR에 새 독립 파일을 추가하지 않으며, 기존 무결성 헤더는 변경된 세 UI 스크립트의 해시만 갱신합니다.
+
+## 호환성·안전 기준
+
+3.0.1은 설치된 `app.asar`의 패키지 식별자, UI 진입점, 세 기존 화면 스크립트와 UI 영수증, 실행 파일 안의 ASAR 무결성 헤더를 확인합니다. 어느 하나라도 예상과 다르거나 애매하면 적용하지 않습니다. 현재 실제 설치본 1.0.4와 1.0.5-beta.5 공개 소스 구조를 기준 사례로 삼았지만, 개별 설치 파일에서의 적용 여부는 실행 시 검사 결과가 결정합니다.
+
+상세 기준과 상태별 동작은 [호환성 안내](docs/COMPATIBILITY.ko.md)를 참고하세요.
+
+## 역사적 r2 릴리스
+
+공개된 `v1.0.3-beta.4-ko-r2`는 원본 1.0.3-beta.4 전용의 한국어·보안 패치입니다. r2의 세션 파일 접근 권한 수정 및 runtime 권한 복구는 그 버전의 `patch-source/`에 남아 있는 역사적 변경이며, 3.x의 버전 적응형 UI 표시층으로 자동 이식된 것이 아닙니다. 최신 원본에 r2를 적용하거나 r2의 보안 수정이 최신 원본에도 적용된다고 가정하면 안 됩니다.
+
+이전 r2 파일과 체크섬은 r2 릴리스 페이지에 보존합니다. 현재 한국어 호환 패치는 [3.0.1 릴리스](https://github.com/style850/apple-music-downloader-ko-patch/releases/tag/v3.0.1)에서 받으세요.
 
 ## 확인한 범위와 한계
 
-- 패처·runtime 회귀 테스트, 첫 패치 오류 재현, r2 업그레이드·반복 적용·복구·원본 신규 적용 검증을 통과했습니다.
-- 한 Windows PC의 실제 설치본에서 서비스 **준비됨**, 기존 세션의 **로그인 확인됨**, 한국어 화면 및 홈 추천 목록 표시를 확인했습니다.
-- 사용자 직접 확인(2026-11-08): 새 Apple 로그인·인증 코드 제출·곡 재생·다운로드 완료가 사용자 환경에서 정상 작동했습니다.
-- 이번 보안 수정은 파일 접근 권한 보호입니다. 토큰 암호화나 모든 취약점 해결을 뜻하지 않으며, 같은 사용자 권한의 악성 프로그램·관리자·SYSTEM으로부터 보호하지는 못합니다.
-- **EXE는 코드 서명되지 않았습니다.** Windows에서 미확인 제작자로 표시될 수 있습니다. 게시된 체크섬으로 파일 일치 여부를 확인할 수 있지만, 체크섬은 제작자 신원이나 무해성을 보증하지 않습니다.
+- 3.0.1 검증: Python 회귀 21개, 번역 회귀 14개, 실제 1.0.4와 beta.5 소스에서 곡·작업 목록을 채운 화면 12개가 통과했습니다. 정확한 문구 321개와 동적 패턴 44개를 등록했습니다. 미등록 문구는 원문을 유지합니다.
+- 이전 3.0.0의 설정/로그인/시작 화면 검사는 비어 있는 목록을 사용해 이번 제보의 동적 화면 누락을 잡지 못했습니다. 이번에는 결과 집계·곡별 상태·실패 안내와 실제 문구처럼 보이는 곡명까지 별도로 검증했습니다.
+- 빌드된 EXE로 격리된 실제 1.0.4 프로그램 파일을 3.0.0에서 바로 업데이트하고 반복 적용·원본 복구했습니다. 복구 후 세 파일이 원본 바이트와 일치하며, EXE에 포함된 코드와 번역도 소스와 일치합니다.
+- 배포 EXE: 11,528,873바이트, SHA-256 `30e599fd8deb366fa0559e2db63cc69a370c5fccd3ea84241b130c14178d9227`. 다운로드한 파일을 `SHA256SUMS.txt`와 비교할 수 있습니다.
 
-패치 EXE SHA-256:
-
-```text
-afc7e5c40800d205bbdd0c44470763613bf743c4643f2773f5491634eceb5b77
-```
+- 현재 설치된 1.0.4 실제 바이너리를 별도 작업 폴더에서 적용·복구해 세 대상 파일이 원래 바이트로 돌아오는 것을 확인했습니다. 1.0.5-beta.5는 고정된 공개 소스 구조로 만든 ASAR fixture 검사까지이며, 실제 설치 파일 적용 성공을 주장하지 않습니다.
+- 실제 사용자 설치본에서의 새 로그인·재생·음원 다운로드는 이번 버전에서 재시험하지 않았습니다.
+- **EXE는 코드 서명되지 않을 수 있습니다.** Windows에서 미확인 제작자로 표시될 수 있습니다. 파일 해시는 일치 여부 확인에 도움이 되지만 제작자 신원이나 무해성을 보증하지 않습니다.
+- 이 패치는 원본 앱의 기능, 계정 상태, 서비스 이용 가능성 또는 미래 원본 업데이트와의 호환을 보증하지 않습니다.
 
 ## 소스와 라이선스
 
-`patch-source/`는 [원본 기준 커밋 `6adb6703d4f8`](https://github.com/Andrew05213/applemusic-downloader-native/tree/6adb6703d4f8ef04e08dc0e3e47b57d44c4f1786)에 적용할 변경 파일입니다. 전체 원본 소스를 복제한 저장소가 아닙니다. [소스 구성·빌드 안내](BUILD.ko.md)를 참고하세요.
+현재 3.0.1 코드는 `patcher/`와 `scripts/build-patcher.ps1`에 있으며 [빌드 안내](BUILD.ko.md)를 참고하세요. `patch-source/`는 [원본 기준 커밋 `6adb6703d4f8`](https://github.com/Andrew05213/applemusic-downloader-native/tree/6adb6703d4f8ef04e08dc0e3e47b57d44c4f1786)에 적용할 역사적 r2 변경 파일입니다. 전체 원본 소스를 복제한 저장소가 아닙니다.
 
 원본 저작권은 **Copyright 2026 Andrew05213**입니다. 원본 `LICENSE`와 `NOTICE`, 포함된 Go 의존성·runv2 라이선스를 보존합니다. 패치의 프로젝트 코드에는 원본과 같은 Apache-2.0 조건을 적용하며, 제3자 자료에는 각자의 조건이 적용됩니다. [수정·출처 고지](docs/PATCH-ATTRIBUTION.ko.md) · [의존성 기록](docs/PATCH-DEPENDENCIES.md)
 
@@ -80,4 +105,4 @@ Apple, Apple Music, 원본 프로젝트 또는 EILVAR의 공식 배포·승인·
 
 ## 문제 제보
 
-지원 원본 버전, 패치 버전, 재현 순서와 오류 문구를 알려 주세요. **Apple ID·비밀번호·인증 코드·쿠키·토큰·세션 이미지 또는 원본 진단 로그를 공개 이슈에 올리지 마세요.** 이 저장소에 대한 문의가 원 제작자나 Apple의 공식 지원으로 연결되는 것은 아닙니다.
+지원 원본 버전, 패처 버전, `--check` 출력, 재현 순서와 오류 문구를 알려 주세요. **Apple ID·비밀번호·인증 코드·쿠키·토큰·세션 이미지 또는 원본 진단 로그를 공개 이슈에 올리지 마세요.** 이 저장소에 대한 문의가 원 제작자나 Apple의 공식 지원으로 연결되는 것은 아닙니다.
