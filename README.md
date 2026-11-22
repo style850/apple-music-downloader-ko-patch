@@ -8,8 +8,7 @@ Windows용 **Apple Music Downloader Native 1.0.3-beta.4**에 한국어 UI와 세
 
 | 필요한 파일 | 링크 |
 | --- | --- |
-| 원본 설치 EXE — 원 제작자 제공 | [AppleMusicDownloader-1.0.3-beta.4-Setup.exe](https://github.com/Andrew05213/applemusic-downloader-native/releases/download/v1.0.3-beta.4/AppleMusicDownloader-1.0.3-beta.4-Setup.exe) |
-| 원본 릴리스 설명·체크섬 | [원본 v1.0.3-beta.4 릴리스](https://github.com/Andrew05213/applemusic-downloader-native/releases/tag/v1.0.3-beta.4) |
+| 원본 프로젝트 — 원 제작자 제공 | [Apple Music Downloader Native 원본 페이지](https://github.com/Andrew05213/applemusic-downloader-native) |
 | 두 번째 패치 EXE | [AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2.exe](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2.exe) |
 | 패치 EXE·소스·라이선스 묶음 | [AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Package.zip](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Package.zip) |
 | 변경 소스·문서만 받기 | [AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Source.zip](https://github.com/style850/apple-music-downloader-ko-patch/releases/download/v1.0.3-beta.4-ko-r2/AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2-Source.zip) |
@@ -17,11 +16,11 @@ Windows용 **Apple Music Downloader Native 1.0.3-beta.4**에 한국어 UI와 세
 
 [이 패치의 릴리스 페이지](https://github.com/style850/apple-music-downloader-ko-patch/releases/tag/v1.0.3-beta.4-ko-r2) · [원본 소스](https://github.com/Andrew05213/applemusic-downloader-native) · [공개 변경 소스](patch-source)
 
-원본 설치 파일은 원 제작자의 GitHub에서 직접 받습니다. 이 저장소와 패치 ZIP에는 원본 앱 전체, Apple·Android·QEMU 런타임, 사용자 프로필 및 계정 자료를 포함하지 않습니다. 원본 프로젝트가 밝힌 제3자 권리 검토의 미완료 사항은 [원본 고지](https://github.com/Andrew05213/applemusic-downloader-native/blob/6adb6703d4f8ef04e08dc0e3e47b57d44c4f1786/NOTICE)에서 확인할 수 있습니다.
+원본 앱의 설치 안내와 릴리스 정보는 위 원본 프로젝트 페이지에서 확인하세요. 버전별 설치 파일 대신 프로젝트 페이지로 연결합니다. 이 저장소와 패치 ZIP에는 원본 앱 전체, Apple·Android·QEMU 런타임, 사용자 프로필 및 계정 자료를 포함하지 않습니다. 원본 프로젝트가 밝힌 제3자 권리 검토의 미완료 사항은 [원본 고지](https://github.com/Andrew05213/applemusic-downloader-native/blob/6adb6703d4f8ef04e08dc0e3e47b57d44c4f1786/NOTICE)에서 확인할 수 있습니다.
 
 ## 설치 방법
 
-1. 위 링크의 **원본 1.0.3-beta.4**를 설치합니다. 이미 해당 원본이나 첫 패치가 설치되어 있다면 재설치는 필요하지 않습니다.
+1. [원본 프로젝트 페이지](https://github.com/Andrew05213/applemusic-downloader-native)에서 설치 안내를 확인합니다. 이 패치를 적용하려면 **원본 1.0.3-beta.4**가 필요하며, 최신 원본 버전은 지원 대상이 아닙니다. 이미 해당 원본이나 첫 패치가 설치되어 있다면 재설치는 필요하지 않습니다.
 2. Apple Music Downloader를 완전히 종료합니다. 진행 중인 다운로드가 있다면 먼저 끝내세요.
 3. `AppleMusicDownloader-1.0.3-beta.4-KO-Security-Patch-r2.exe`를 실행합니다.
 4. 설치 폴더와 적용 안내를 확인하고 **예**를 누릅니다. 기본 경로를 찾지 못하면 실제 설치 폴더를 선택합니다.
